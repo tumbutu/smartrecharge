@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_direct"
+        android:icon="@drawable/ic_dialpad_24dp"
+        android:title="@string/title_direct" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_24dp"
+        android:title="@string/title_dashboard" />
+
+
+    <item
+        android:id="@+id/navigation_ocr"
+        android:icon="@drawable/ic_camera_24dp"
+        android:title="@string/title_ocr" />
+
+
+</menu>

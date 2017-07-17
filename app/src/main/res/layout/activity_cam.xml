@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".camActivity">
+
+    <SurfaceView
+        android:id="@+id/camera_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <aaronichie.smartrecharge.FocusBoxView
+        android:id="@+id/focus_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/flash_button"
+        android:layout_gravity="start|bottom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_flashlight" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/shutter_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_snap_pix" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/focus_button"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_focus"/>
+
+
+</FrameLayout>

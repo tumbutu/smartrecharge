@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">智能充值</string>
+    <string name="add">加+</string>
+    <string name="app_chi">中文</string>
+    <string name="app_eng">英语</string>
+    <string name="app_french">法国</string>
+    <string name="app_kor">朝鲜的</string>
+    <string name="cancelledImg">取消</string>
+    <string name="failedDection">无法设置检测器！</string>
+    <string name="failedImgLoad">无法加载图像</string>
+    <string name="failedScan">扫描失败：找不到任何扫描</string>
+    <string name="language">语言</string>
+    <string name="noSplash">飞溅掉</string>
+    <string name="nothingScan">没有扫描</string>
+    <string name="rechargeTitle">充值码</string>
+    <string name="scan">扫描</string>
+    <string name="scanMsg">扫描刮卡：条形码或QR码</string>
+    <string name="title_dashboard" translatable="true">酒吧或二维码</string>
+    <string name="title_direct">直接输入</string>
+    <string name="title_gift">礼品</string>
+    <string name="title_home">家</string>
+    <string name="title_recharge">信用账户</string>
+    <string name="no_scan_beep_sound">没有扫描蜂鸣声</string>
+    <string name="no_splash_sound">没有飞溅的声音</string>
+</resources>

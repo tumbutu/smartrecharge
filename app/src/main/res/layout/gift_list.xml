@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="70dp"
+    android:divider="?android:listDivider"
+    android:dividerPadding="2dp"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/phNum"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_gravity="start"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="5dp"
+        android:text="@string/pick_number"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:textColor="@color/defaultThemeColor"
+        android:textSize="@dimen/smallTextSize"
+        android:background="@drawable/curved_corners"
+        android:layout_height="match_parent"
+    />
+
+    <EditText
+        android:layout_height="match_parent"
+        android:hint="@string/zero_cash"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/defaultThemeColor"
+        android:background="@drawable/curved_corners"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/smallTextSize"
+        android:id="@+id/tv"
+    />
+
+    <!--
+        <Button
+            android:id="@+id/removeItem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="0.2"
+            android:background="@drawable/curved_corners"
+            android:text="@string/minus_sign"
+            android:textColor="@color/defaultThemeColor"
+            android:textSize="@dimen/MaxTextSize"
+        />
+    -->
+
+</LinearLayout>

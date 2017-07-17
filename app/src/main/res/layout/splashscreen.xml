@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splashScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/MaxTextSize"
+        android:textColor="@color/textColor"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="@string/app_name"
+        android:id="@+id/appName" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/appName"
+        android:background="@color/naviColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <aaronichie.smartrecharge.LVWifi
+            android:id="@+id/lv_wifi"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/MediumTextSize"
+            android:textColor="@color/textColor"
+            android:id="@+id/netOprDis" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/navigation"
+        android:background="@color/naviColor"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/naviColor"
+        app:itemTextColor="@color/textColor"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

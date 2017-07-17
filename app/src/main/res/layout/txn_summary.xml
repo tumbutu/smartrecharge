@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/MediumTextSize"
+        android:textColor="@color/defaultThemeColor"
+        android:padding="5dp"
+        android:text="@string/txn_summary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/tinyTextSize"
+        android:background="@color/defaultThemeColor"
+        android:textColor="@color/textColor"
+        android:padding="5dp"
+        android:text="@string/recharge_warn"/>
+
+    <ListView
+        android:id="@+id/txn_summary_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

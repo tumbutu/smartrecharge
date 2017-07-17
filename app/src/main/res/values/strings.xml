@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Smart recharge</string>
+    <string name="scan">Scan</string>
+    <string name="scanMsg">Scan scratch card: Barcode or QR code</string>
+    <string name="nothingScan">nothing scanned</string>
+    <string name="language">Languages</string>
+    <string name="app_eng">English</string>
+    <string name="app_french">French</string>
+    <string name="app_kor">Korean</string>
+    <string name="app_chi">Chinese</string>
+    <string name="noSplash">Splash Off</string>
+    <string name="no_splash_sound">No Splash Sound</string>
+    <string name="no_scan_beep_sound">No Scan beep Sound</string>
+    <string name="rechargeTitle">Recharge Code</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_direct">Direct input</string>
+    <string name="title_dashboard">Bar or QR code</string>
+    <string name="title_ocr" translatable="false">OCR</string>
+    <string name="title_gift">Gift</string>
+    <string name="title_recharge">Credit account(s)</string>
+    <string name="failedScan">Scan Failed: Found nothing to scan</string>
+    <string name="failedDection">Could not setup the detector!</string>
+    <string name="failedImgLoad">Failed to load Image</string>
+    <string name="cancelledImg">Cancelled</string>
+    <string name="add">Add+</string>
+    <string name="zero_cash">0.00</string>
+    <string name="minus_sign">-</string>
+    <string name="hint_amt">amt</string>
+    <string name="hint_code_prompt">enter recharge code</string>
+    <string name="no_recharge_code">no rechage code is available</string>
+    <string name="pick_number">: pick number</string>
+    <string name="sample_code">ex: 12345678901234</string>
+    <string name="cash_icon">cash_icon</string>
+    <string name="txn_summary">Transaction Summary</string>
+    <string name="recharge_warn">Note that the cash value of the recharge code is always VERIFIED. Confirm that the total amount being sent is same as the card\'s face value. Especially, when recharging for multiple people. Where the value of the recharge card is INSUFFICIENT some recipient(s) WILL NOT be credited. In case of balance, the sender is credited.</string>
+
+    <string name="txnErr">Error!</string>
+    <string name="recvErr">Recipient phone number(s) is/are missing. Click \'CANCEL\' to go back.</string>
+    <string name="amtErr">Recharge amount(s) is/are missing. Click \'CANCEL\' to go back.</string>
+    <string name="nonZeroNonEmptyWarn">recharge set to GH 1. Amount cannot be Zero or empty.</string>
+</resources>
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">수마트충전</string>
+    <string name="app_chi">중국어</string>
+    <string name="app_eng">영어</string>
+    <string name="app_french">불어</string>
+    <string name="app_kor">한국어</string>
+    <string name="cancelledImg">취소됐음</string>
+    <string name="title_gift">선물하기</string>
+    <string name="scan">스캔</string>
+    <string name="nothingScan">스캔된것 없음</string>
+    <string name="title_home">홈</string>
+    <string name="title_recharge">충전하기</string>
+    <string name="failedDection">감지기를 설정할 수 없음!</string>
+    <string name="failedImgLoad">이미지를 로드하지 못했음</string>
+    <string name="failedScan">스캔 실패: 스캔 할 내용이 없습니다.</string>
+    <string name="language">언어</string>
+    <string name="noSplash">스플래시 끄기</string>
+    <string name="rechargeTitle">충전 코드</string>
+    <string name="scanMsg">스캔 스크래치 카드 바코드 또는 QR 코드</string>
+    <string name="title_direct">직접 입력</string>
+    <string name="add">추가+</string>
+    <string name="title_dashboard" translatable="true">바코드 또는 QR 코드</string>
+    <string name="no_scan_beep_sound">스캔 소리 없이</string>
+    <string name="no_splash_sound">스플래시 소리 없이</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:divider="?android:listDivider"
+    android:dividerPadding="2dp"
+    android:showDividers="middle"
+    android:padding="5dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/pay_icon"
+        android:contentDescription="@string/cash_icon" />
+
+    <TextView
+        android:id="@+id/recv"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/defaultThemeColor"
+        android:textSize="@dimen/smallTextSize" />
+
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/defaultThemeColor"
+        android:textSize="@dimen/smallTextSize"
+        android:id="@+id/recvAmt"
+        />
+</LinearLayout>
+

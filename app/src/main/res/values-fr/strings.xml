@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart recharge</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_recharge">Compte(s) créditeur</string>
+    <string name="rechargeTitle">Code de recharge</string>
+    <string name="app_chi">chinois</string>
+    <string name="add">Ajouter+</string>
+    <string name="app_eng">Anglais</string>
+    <string name="app_french">français</string>
+    <string name="app_kor">coréen</string>
+    <string name="cancelledImg">Annulé</string>
+    <string name="failedDection">Impossible de configurer le détecteur!</string>
+    <string name="failedImgLoad">Impossible de charger l\'image</string>
+    <string name="failedScan">Échec de balayage: rien trouvé pour numériser</string>
+    <string name="language">Langues</string>
+    <string name="title_direct">Entrée directe</string>
+    <string name="title_gift">cadeau</string>
+    <string name="scanMsg">Scan de la carte à gratter: Code à barres ou code QR</string>
+    <string name="scan">Balayage</string>
+    <string name="title_dashboard" translatable="true">Bar ou code QR</string>
+    <string name="noSplash">Éclaboussure off</string>
+    <string name="nothingScan">rien a été scanné</string>
+    <string name="no_scan_beep_sound">Pas de bip de numérisation Son</string>
+    <string name="no_splash_sound">Non Éclaboussure Du son</string>
+</resources>

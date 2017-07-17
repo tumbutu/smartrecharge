@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textColor">#FFFFFF</color>
+    <color name="naviColor">#FFFFFF</color>
+    <color name="textColorGrey">#BDBDBD</color>
+
+    <color name="tigoThemeColor">#2196F3</color>
+    <color name="mtnThemeColor">#EFCC00</color>
+    <color name="gloThemeColor">#9E9E9E</color>
+    <color name="vodaThemeColor">#F44336</color>
+    <color name="defaultThemeColor">#B03060</color>
+
+    <color name="focus_box_corner">#ffffffff</color>
+    <!-- four corner elements for viewfinder -->
+    <color name="focus_box_frame">#ffd6d6d6</color>
+    <!-- viewfinder rectangle -->
+    <color name="focus_box_mask">#60000000</color>
+    <!-- viewfinder exterior darkened area -->
+</resources>

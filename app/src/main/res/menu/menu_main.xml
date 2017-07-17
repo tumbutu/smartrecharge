@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/lang_eng"
+        android:icon="@null"
+        android:title="@string/app_eng"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/lang_french"
+        android:icon="@null"
+        android:title="@string/app_french"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/lang_kor"
+        android:icon="@null"
+        android:title="@string/app_kor"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/lang_chi"
+        android:icon="@null"
+        android:title="@string/app_chi"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/no_splash_sound"
+        android:icon="@null"
+        android:title="@string/no_splash_sound"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/no_scan_beep_sound"
+        android:icon="@null"
+        android:title="@string/no_scan_beep_sound"
+        app:showAsAction="collapseActionView" />
+</menu>
