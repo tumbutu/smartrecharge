@@ -11,15 +11,16 @@
 
     <ImageView
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.2"
+        android:gravity="center_vertical"
         android:src="@drawable/pay_icon"
         android:contentDescription="@string/cash_icon" />
 
     <TextView
         android:id="@+id/recv"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginEnd="5dp"
         android:layout_marginRight="5dp"
@@ -31,12 +32,13 @@
         android:textSize="@dimen/smallTextSize" />
 
     <TextView
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:layout_weight="0.2"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:layout_marginRight="5dp"
         android:layout_marginEnd="5dp"
+        android:padding="10dp"
         android:textColor="@color/defaultThemeColor"
         android:textSize="@dimen/smallTextSize"
         android:id="@+id/recvAmt"
