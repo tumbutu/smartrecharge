@@ -473,7 +473,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
             List <Button> buttons = new ArrayList<>();
-            final List <EditText> editTexts = new ArrayList<>();
+            List <EditText> editTexts = new ArrayList<>();
 
             i += 1;
             if(view == null){
@@ -487,10 +487,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             phNum.setText(String.format("%s%s", valueOf_I,getString(R.string.pick_number)));
 
             edt = (EditText) view.findViewById(R.id.tv);
-            edt.setTag(valueOf_I);
+            edt.setTag(valueOf_I);              //  give the editTags temp names
+            edt.setEnabled(false);              // disbale all the amount editTexts at creation(enable it only a corresponding phone number has been picked)
 
             if (hm.containsKey(valueOf_I)){
                 phNum.setText(String.format("%s%s%s",valueOf_I,": ",hm.get(valueOf_I)));
+                edt.findViewWithTag(valueOf_I).setEnabled(true);        //enable only editText with keys available in phone number hashmap
             }
 
             buttons.add(phNum);
@@ -504,6 +506,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                         String [] parts = str.split(":");
                         clickedBtnTag = parts[0];
 
+                                                                  //*  send intent to get phone number */
                             Intent contactPicker = new Intent(Intent.ACTION_PICK,
                                     ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
                             startActivityForResult(contactPicker, RESULT_PICK_CONTACT);
@@ -513,20 +516,22 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
                 bb.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
-                    public boolean onLongClick(View view) {
+                    public boolean onLongClick(View view) {             //onLongClick listener deletes a row from the list of gift receivers
                         String str = (String) bb.getText();
                         String [] parts = str.split(":");
-                        clickedBtnTag = parts[0];
+                        clickedBtnTag = parts[0];                 //get which button has been clicked
+                                                                  //Start: this block of code implements a shift of the key-value pair upon delete from the hashmap
 
-                        if (hm.containsKey(clickedBtnTag) || EtHm.containsKey(clickedBtnTag)){
+
+                        //if(hm.containsKey(clickedBtnTag)){               /* immediately remove the key value for hashmaps */
                             hm.remove(clickedBtnTag);
                             EtHm.remove(clickedBtnTag);
-                        }
+                        //}
 
-                        HashMap<String,String> hm2 = new HashMap<>();
+                        HashMap<String,String> hm2 = new HashMap<>();     /*temp hashmap to hold new fone number - hashmap */
 
                         // amt edittext is also controlled here
-                        HashMap<String,String> EtHm2 = new HashMap<>();
+                        HashMap<String,String> EtHm2 = new HashMap<>();   /*temp hashmap to hold new amount - hashmap */
 
                         for (Object key : hm.keySet()) {
                             String keyStr = key.toString();
@@ -547,39 +552,38 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                             }
                         }
 
-                        hm.clear();
-                        hm.putAll(hm2);
+                        hm.clear();                                         /* Clear the old hashmap - fone numbers */
+                        hm.putAll(hm2);                                     /* put the new hashmap -  fone numbers */
 
-                        EtHm.clear();
-                        EtHm.putAll(EtHm2);
+                        EtHm.clear();                                       /* Clear the old hashmap - AMOUNT */
+                        EtHm.putAll(EtHm2);                                 /* Clear the old hashmap - AMOUNT */
 
                         notifyDataSetChanged();
 
-                        totalRxn -=1;
+                        totalRxn -=1;                                       /*Reduce total number of rows by one*/
                         receivers = totalRxn;
-                        button.setText(String.format("%s(%s)", getString(R.string.add), totalRxn));
+                        button.setText(String.format("%s(%s)", getString(R.string.add), totalRxn));     /* End: the shift algorithm ends here! */
                         return true;
                     }
                 });
             }
 
-            for (final EditText ets: editTexts) {
+            for (final EditText ets: editTexts) {           //loop over the temp array of editTexts
                 ets.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                     @Override
                     public void onFocusChange(View view, boolean b) {
-                        if (!b){
+                        if (!b){                            //add the amount value to hashMap only editText is disfocused
                             String edtTag = String.valueOf(ets.getTag());
                             String edtText = String.valueOf(ets.getText());
 
-                            EtHm.put(edtTag,edtText);
-
+                            EtHm.put(edtTag,edtText);       //add to hashMap
                         }
 
                     }
                 });
 
                 if (EtHm.size()>0){
-                    for (Object key : EtHm.keySet()) {
+                   for (Object key : EtHm.keySet()) {
                         ets.setText(EtHm.get(edt.getTag().toString()));
                     }
                 }
